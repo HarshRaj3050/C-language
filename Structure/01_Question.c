@@ -1,3 +1,6 @@
+/* Write a program to store the details of 3 employees from user-defined data. 
+   Use the structure declared above. */
+
 #include <stdio.h>
 #include<string.h>
 
@@ -13,13 +16,13 @@ int main()
     struct employee e1[3];
     for (int i = 1; i < 4; i++)
     {
-        printf("%d. Enter Emloyee details\n\n", i);
+        printf("%d. Enter Employee details\n\n", i);
         
-        printf("%d. Enter emloyee name : ", i);
+        printf("%d. Enter employee name : ", i);
         scanf("%s", e1[i].name);
-        printf("%d. Enter emloyee code : ", i);
+        printf("%d. Enter employee code : ", i);
         scanf("%d", &e1[i].code);
-        printf("%d. Enter emloyee salary : ", i);
+        printf("%d. Enter employee salary : ", i);
         scanf("%f", &e1[i].salary);
         printf("\n");
     }
